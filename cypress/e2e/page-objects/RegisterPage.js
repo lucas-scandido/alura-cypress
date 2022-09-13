@@ -8,11 +8,11 @@ class RegisterPage {
         cy.contains(registerMessage).should('be.visible')
     }
 
-    fillForm() {
-        cy.get('input[formcontrolname="email"]').type('luccas.candido@outlook.com')
-        cy.get('input[formcontrolname="fullName"]').type('Lucas Silva')
-        cy.get('input[formcontrolname="userName"]').type('ads')
-        cy.get('input[formcontrolname="password"]').type('alura123')
+    fillForm(newUser) {
+        cy.get('input[formcontrolname="email"]').type(newUser.email)
+        cy.get('input[formcontrolname="fullName"]').type(newUser.fullName)
+        cy.get('input[formcontrolname="userName"]').type(newUser.userName)
+        cy.get('input[formcontrolname="password"]').type(newUser.password)
     }
 
     submit(){

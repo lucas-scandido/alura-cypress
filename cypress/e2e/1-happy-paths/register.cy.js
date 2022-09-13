@@ -1,4 +1,5 @@
 import RegisterPage from '../page-objects/RegisterPage'
+import RegisterFactory from '../factories/RegisterFactory'
 
 describe('Register New User', () => {
 
@@ -9,7 +10,10 @@ describe('Register New User', () => {
   })
   
   it('Valid User', () => {
-    RegisterPage.fillForm()
+
+    var newUser = RegisterFactory.newUser()
+
+    RegisterPage.fillForm(newUser)
     RegisterPage.submit()
     RegisterPage.textSuccess()
   })
