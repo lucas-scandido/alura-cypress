@@ -1,0 +1,25 @@
+{
+  "name": "alura-cypress",
+  "version": "1.0.0",
+  "description": "Módulo de Automação de Testes E2E com Cypress da Formação de QA na Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-scandido/alura-cypress.git"
+  },
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Lucas da Silva Candido",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucas-scandido/alura-cypress/issues"
+  },
+  "homepage": "https://github.com/lucas-scandido/alura-cypress#readme",
+  "dependencies": {
+    "cypress": "^10.7.0"
+  }
+}
